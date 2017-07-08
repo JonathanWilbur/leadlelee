@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Signup</title>
+        <meta charset="utf-8" />
+        <style>@font-face{font-family:oldlondon;src:url(OldLondon.ttf)}body{background-color:#FFC;color:#484811;font-size:20px}h1{font-family:oldlondon}h1,h3{text-align:center}#menu,#leaderboard,#signup,#update,#info,.topic{margin:20px 0;text-align:center;width:100%}.menuoption{margin:5px;padding:5px;display:inline-block}table{margin:0 auto}td{margin:0;padding:0 5px;width:50px;text-align:center}.wide{width:150px}#signupform,#updateform{margin:0 auto}.formdiv{margin:5px;padding:5px}input{padding:10px;background-color:#CA8;color:#140808;border:0;border-radius:5px;border-style:none;width:150px}#submitbutton:hover{background-color:#841}label{display:block}.warning{color:red}</style>
+    </head>
+    <body>
+        <div id="titlebar">
+            <h1>Leaderboard</h1>
+            <h3>Signup Page</h3>
+        </div>
+        <div id="menu">
+            <a class="menuoption" href="/index.html">Home</a>
+            <a class="menuoption" href="/signup.html">Sign Up</a>
+            <a class="menuoption" href="/update.html">Update Your Stats</a>
+            <a class="menuoption" href="/about.html">About</a>
+        </div>
+        <div id="info">
+            <p>This leaderboard operates on an honor-system. Do not lie about your abilities.</p>
+            <p class="warning">
+                Though your password will be stored securely, it will be transmitted in plain text. 
+                Do not pick a password that you use elsewhere.
+            </p>
+        </div>
+        <div id="signup">
+            <form id="signupform">
+                <div id="usernamediv" class="formdiv">
+                    <label>Username</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="name" 
+                        maxlength="30" 
+                        required="true" 
+                        placeholder="ZanzAbteilung" />
+                </div>
+                <div id="passworddiv" class="formdiv">
+                    <label>Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        maxlength="30" 
+                        required="true" 
+                        placeholder="See warning above" />
+                </div>
+                <div id="weightdiv" class="formdiv">
+                    <label>Weight (Pounds)</label>
+                    <input 
+                        type="number" 
+                        id="weight" 
+                        name="weight" 
+                        required="true" 
+                        min="100" 
+                        max="500" 
+                        placeholder="Required" />
+                </div>
+                <div id="heightdiv" class="formdiv">
+                    <label>Height (Inches)</label>
+                    <input 
+                        type="number" 
+                        id="height" 
+                        name="height" 
+                        required="true" 
+                        min="48"
+                        max="96" 
+                        placeholder="Required" />
+                </div>
+                <div id="deadliftdiv" class="formdiv">
+                    <label>Deadlift (Max. One-Rep Pounds)</label>
+                    <input
+                        type="number"
+                        id="deadlift"
+                        name="deadlift"
+                        required="false"
+                        min="0"
+                        max="1000"
+                        placeholder="0 - 1000" />
+                </div> 
+                <div id="benchdiv" class="formdiv">
+                    <label>Bench (Max. One-Rep Pounds)</label>
+                    <input 
+                        type="number" 
+                        id="bench" 
+                        name="bench" 
+                        required="false" 
+                        min="0" 
+                        max="1000" 
+                        placeholder="0 - 1000" />
+                </div>
+                <div id="squatdiv" class="formdiv">
+                    <label>Squat (Max. One-Rep Pounds)</label>
+                    <input
+                        type="number"
+                        id="squat" 
+                        name="squat" 
+                        required="false" 
+                        min="0" 
+                        max="1000"
+                        placeholder="0 - 1000" />
+                </div>
+                <div id="submitdiv" class="formdiv">
+                    <input 
+                        type="submit"
+                        id="submitbutton"
+                        value="Submit" />
+                </div>
+            </form>
+        </div>
+        <script src="./signup.js"></script>
+    </body>
+</html>

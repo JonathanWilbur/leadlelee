@@ -1,0 +1,13 @@
+[
+    {
+        "name": "sup",
+        "passwordSHA256": "",
+        "updated": "2017-05-14T11:36:28.140Z",
+        "weight": 150,
+        "height": 72,
+        "bench": 300,
+        "squat": 200,
+        "deadlift": 300,
+        "score": 800
+    }
+]
